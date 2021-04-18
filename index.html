@@ -11,10 +11,40 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <!-- Nav -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="/" class="navbar__logo"
+        ><img src="/images/logo.svg" alt="" class="logo"
+      /></a>
+      <!-- Menu -->
+      <img src="/images/icon-hamburger.svg" alt="menu" class="menu" />
+      <img
+        src="/images/icon-close.svg"
+        alt="close menu"
+        class="close inactive"
+      />
+
+      <!-- Navigation -->
+      <div class="navbar__navigation">
+        <a href="#" class="navigation">Home</a>
+        <a href="#" class="navigation">About</a>
+        <a href="#" class="navigation">Contact</a>
+        <a href="#" class="navigation">Blog</a>
+        <a href="#" class="navigation">Careers</a>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
