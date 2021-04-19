@@ -38,3 +38,32 @@ body {
 a {
   text-decoration: none;
 }
+////////////////////////////////////////
+// Buttons
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--color-neutral-very-white);
+  padding: 0.8rem 3.4rem;
+  outline: transparent;
+  border: none;
+  border-radius: 2.2rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-lime-green) 0%,
+    var(--color-primary-bright-cyan) 99.58%
+  );
+  white-space: nowrap;
+  transition: opacity 0.2s;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.btn:hover {
+  opacity: 0.4;
+}

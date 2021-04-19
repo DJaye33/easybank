@@ -22,17 +22,20 @@
   <body>
     <!-- Nav -->
     <nav class="navbar">
+      <input type="radio" id="toggleMenu" name="toggle" class="inactive" />
+      <input type="radio" id="close" name="toggle" class="inactive" />
       <!-- Logo -->
       <a href="/" class="navbar__logo"
         ><img src="/images/logo.svg" alt="" class="logo"
       /></a>
       <!-- Menu -->
-      <img src="/images/icon-hamburger.svg" alt="menu" class="menu" />
-      <img
-        src="/images/icon-close.svg"
-        alt="close menu"
-        class="close inactive"
-      />
+      <label for="toggleMenu" class="toggleMenu"
+        ><img src="/images/icon-hamburger.svg" alt="menu"
+      /></label>
+
+      <label for="close" class="close">
+        <img src="/images/icon-close.svg" alt="close menu" />
+      </label>
 
       <!-- Navigation -->
       <div class="navbar__navigation">
@@ -42,6 +45,8 @@
         <a href="#" class="navigation">Blog</a>
         <a href="#" class="navigation">Careers</a>
       </div>
+
+      <button class="btn inactive">Request Invite</button>
     </nav>
     <!-- End Nav -->
 
