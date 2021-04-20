@@ -34,12 +34,22 @@ body {
   display: none;
 }
 ////////////////////////////////////////
-// Links
+// Link Tag
 a {
   text-decoration: none;
 }
 ////////////////////////////////////////
+// Paragraph Tag
+p {
+  color: var(--color-neutral-grayish-blue);
+}
+////////////////////////////////////////
 // Buttons
+button:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
 .btn {
   cursor: pointer;
   font-family: inherit;

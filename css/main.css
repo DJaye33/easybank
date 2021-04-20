@@ -28,6 +28,13 @@ body {
 a {
   text-decoration: none; }
 
+p {
+  color: var(--color-neutral-grayish-blue); }
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.4; }
+
 .btn {
   cursor: pointer;
   font-family: inherit;
@@ -55,7 +62,8 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2.2rem 2.4rem; }
+  padding: 2.2rem 2.4rem;
+  z-index: 3; }
   @media screen and (min-width: 1024px) {
     .navbar {
       position: initial;
@@ -131,10 +139,10 @@ a {
     background: linear-gradient(180deg, #2d314d 0%, rgba(45, 49, 77, 0.0001) 100%);
     height: 100%;
     position: fixed;
-    z-index: -1;
     top: 6.4rem;
     left: 0;
-    right: 0; }
+    right: 0;
+    z-index: -1; }
     @media screen and (min-width: 1024px) {
       .navbar__navigation::before {
         display: none; } }
@@ -151,9 +159,6 @@ a {
         font-size: 1.4rem;
         line-height: 1.6rem;
         position: relative; } }
-    @media screen and (min-width: 1024px) {
-      .navbar__navigation .navigation::after:hover {
-        color: blue; } }
     .navbar__navigation .navigation:first-child {
       margin-top: 3.2rem; }
       @media screen and (min-width: 1024px) {
@@ -172,14 +177,62 @@ a {
   background-position: center;
   height: 28.77rem;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 2;
+  margin-bottom: 3.3rem; }
+  @media screen and (min-width: 1024px) {
+    .header__phone {
+      height: 44rem; } }
   .header__phone .phones {
     width: 87%;
     position: absolute;
-    top: -11.5rem;
+    top: -11.65rem;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto; }
+    @media screen and (min-width: 540px) {
+      .header__phone .phones {
+        top: -18rem; } }
+    @media screen and (min-width: 768px) {
+      .header__phone .phones {
+        top: -24rem; } }
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2.4rem 8.8rem; }
+  @media screen and (min-width: 540px) {
+    .header__info {
+      padding: 0 6rem 8.8rem; } }
+  @media screen and (min-width: 768px) {
+    .header__info {
+      padding: 0 12rem 8.8rem; } }
+  @media screen and (min-width: 1024px) {
+    .header__info {
+      padding: 0 22rem 8.8rem; } }
+  .header__info .header-heading {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    text-align: center;
+    color: var(--color-primary-dark-blue);
+    margin-bottom: 1.6rem; }
+    @media screen and (min-width: 1024px) {
+      .header__info .header-heading {
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+        margin-bottom: 2.4rem; } }
+  .header__info .header-paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 3.2rem; }
+    @media screen and (min-width: 1024px) {
+      .header__info .header-paragraph {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-bottom: 3.6rem; } }
 
 /*# sourceMappingURL=main.css.map */

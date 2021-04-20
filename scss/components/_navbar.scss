@@ -79,10 +79,10 @@
     );
     height: 100%;
     position: fixed;
-    z-index: -1;
     top: 6.4rem;
     left: 0;
     right: 0;
+    z-index: -1;
 
     @media screen and (min-width: 1024px) {
       display: none;
@@ -104,13 +104,13 @@
       position: relative;
     }
 
-    &::after:hover {
-      @media screen and (min-width: 1024px) {
-        // content: "";
-        // position: absolute;
-        color: blue;
-      }
-    }
+    // &::after:hover {
+    //   @media screen and (min-width: 1024px) {
+    //     content: "";
+    //     position: absolute;
+    //     color: blue;
+    //   }
+    // }
 
     &:first-child {
       margin-top: 3.2rem;
