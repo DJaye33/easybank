@@ -11,6 +11,17 @@
 
   @media screen and (min-width: 1024px) {
     height: 44rem;
+    margin-bottom: 6.6rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    order: 2;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-size: 158%;
+    background-position: 10% 75%;
+    height: 65.6rem;
+    overflow: initial;
+    margin-bottom: 0;
   }
 
   .phones {
@@ -28,6 +39,17 @@
 
     @media screen and (min-width: 768px) {
       top: -24rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      // position: initial;
+    }
+
+    @media screen and (min-width: 1440px) {
+      position: relative;
+      top: -12rem;
+      left: 13rem;
+      width: 100%;
     }
   }
 }
@@ -50,6 +72,13 @@
     padding: 0 22rem 8.8rem;
   }
 
+  @media screen and (min-width: 1440px) {
+    padding: 0;
+    padding-left: 16.5rem;
+    align-items: flex-start;
+    width: 44.7rem;
+  }
+
   .header-heading {
     font-weight: 300;
     font-size: 4rem;
@@ -63,6 +92,10 @@
       line-height: 6.4rem;
       margin-bottom: 2.4rem;
     }
+
+    @media screen and (min-width: 1440px) {
+      text-align: left;
+    }
   }
 
   .header-paragraph {
@@ -75,6 +108,10 @@
       font-size: 1.8rem;
       line-height: 2.8rem;
       margin-bottom: 3.6rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      text-align: left;
     }
   }
 }

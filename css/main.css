@@ -18,6 +18,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (min-width: 1440px) {
+    html {
+      overflow-x: hidden; } }
 
 body {
   font-family: "Public Sans", sans-serif; }
@@ -74,7 +77,13 @@ button:hover {
 
 .header {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border: 2px dotted gold; }
+  @media screen and (min-width: 1440px) {
+    .header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; } }
 
 .toggleMenu {
   cursor: pointer; }
@@ -182,7 +191,17 @@ button:hover {
   margin-bottom: 3.3rem; }
   @media screen and (min-width: 1024px) {
     .header__phone {
-      height: 44rem; } }
+      height: 44rem;
+      margin-bottom: 6.6rem; } }
+  @media screen and (min-width: 1440px) {
+    .header__phone {
+      order: 2;
+      background-image: url("/images/bg-intro-desktop.svg");
+      background-size: 158%;
+      background-position: 10% 75%;
+      height: 65.6rem;
+      overflow: initial;
+      margin-bottom: 0; } }
   .header__phone .phones {
     width: 87%;
     position: absolute;
@@ -197,6 +216,12 @@ button:hover {
     @media screen and (min-width: 768px) {
       .header__phone .phones {
         top: -24rem; } }
+    @media screen and (min-width: 1440px) {
+      .header__phone .phones {
+        position: relative;
+        top: -12rem;
+        left: 13rem;
+        width: 100%; } }
 
 .header__info {
   display: flex;
@@ -212,6 +237,12 @@ button:hover {
   @media screen and (min-width: 1024px) {
     .header__info {
       padding: 0 22rem 8.8rem; } }
+  @media screen and (min-width: 1440px) {
+    .header__info {
+      padding: 0;
+      padding-left: 16.5rem;
+      align-items: flex-start;
+      width: 44.7rem; } }
   .header__info .header-heading {
     font-weight: 300;
     font-size: 4rem;
@@ -224,6 +255,9 @@ button:hover {
         font-size: 5.6rem;
         line-height: 6.4rem;
         margin-bottom: 2.4rem; } }
+    @media screen and (min-width: 1440px) {
+      .header__info .header-heading {
+        text-align: left; } }
   .header__info .header-paragraph {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -234,5 +268,8 @@ button:hover {
         font-size: 1.8rem;
         line-height: 2.8rem;
         margin-bottom: 3.6rem; } }
+    @media screen and (min-width: 1440px) {
+      .header__info .header-paragraph {
+        text-align: left; } }
 
 /*# sourceMappingURL=main.css.map */
