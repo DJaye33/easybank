@@ -87,6 +87,12 @@ button:hover {
 .features {
   padding: 6.4rem 2.4rem 3.2rem;
   background-color: var(--color-secondary-bg-light-grayish-blue); }
+  @media screen and (min-width: 1024px) {
+    .features {
+      padding: 6.9rem 5rem; } }
+  @media screen and (min-width: 1024px) {
+    .features {
+      padding: 9.4rem 16.5rem; } }
 
 .toggleMenu {
   cursor: pointer; }
@@ -288,6 +294,13 @@ button:hover {
     text-align: center;
     color: var(--color-primary-dark-blue);
     margin-bottom: 1.4rem; }
+    @media screen and (min-width: 1024px) {
+      .features__header .features-heading {
+        font-size: 4rem;
+        line-height: 6.4rem; } }
+    @media screen and (min-width: 1440px) {
+      .features__header .features-heading {
+        text-align: left; } }
   .features__header .features-paragraph {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -296,7 +309,26 @@ button:hover {
       .features__header .features-paragraph {
         margin: 0 auto;
         width: 40rem; } }
+    @media screen and (min-width: 1024px) {
+      .features__header .features-paragraph {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        width: 63.5rem; } }
+    @media screen and (min-width: 1440px) {
+      .features__header .features-paragraph {
+        margin: initial;
+        text-align: left; } }
 
+@media screen and (min-width: 1024px) {
+  .features__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
+@media screen and (min-width: 1440px) {
+  .features__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%; } }
 .features__content .features__banking,
 .features__content .features__budgeting,
 .features__content .features__onboarding,
@@ -307,6 +339,20 @@ button:hover {
   align-items: center;
   height: 21.5rem;
   margin-bottom: 3.2rem; }
+  @media screen and (min-width: 1440px) {
+    .features__content .features__banking,
+    .features__content .features__budgeting,
+    .features__content .features__onboarding,
+    .features__content .features__api {
+      align-items: flex-start; } }
+  @media screen and (min-width: 1440px) {
+    .features__content .features__banking,
+    .features__content .features__budgeting,
+    .features__content .features__onboarding,
+    .features__content .features__api {
+      height: 26rem;
+      margin-bottom: initial;
+      margin-right: 3rem; } }
 .features__content .banking-heading,
 .features__content .budgeting-heading,
 .features__content .onboarding-heading,
@@ -329,5 +375,12 @@ button:hover {
     .features__content .onboarding-paragraph,
     .features__content .api-paragraph {
       width: 40rem; } }
+  @media screen and (min-width: 1440px) {
+    .features__content .banking-paragraph,
+    .features__content .budgeting-paragraph,
+    .features__content .onboarding-paragraph,
+    .features__content .api-paragraph {
+      width: 25.5rem;
+      text-align: left; } }
 
 /*# sourceMappingURL=main.css.map */

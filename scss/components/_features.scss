@@ -7,6 +7,15 @@
     text-align: center;
     color: var(--color-primary-dark-blue);
     margin-bottom: 1.4rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+      line-height: 6.4rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      text-align: left;
+    }
   }
 
   .features-paragraph {
@@ -18,10 +27,32 @@
       margin: 0 auto;
       width: 40rem;
     }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      width: 63.5rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: initial;
+      text-align: left;
+    }
   }
 }
 
 .features__content {
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+  }
   // Sub-section headings
   .features__banking,
   .features__budgeting,
@@ -33,6 +64,16 @@
     align-items: center;
     height: 21.5rem;
     margin-bottom: 3.2rem;
+
+    @media screen and (min-width: 1440px) {
+      align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1440px) {
+      height: 26rem;
+      margin-bottom: initial;
+      margin-right: 3rem;
+    }
   }
 
   // Section Sub-headings
@@ -58,6 +99,11 @@
 
     @media screen and (min-width: 768px) {
       width: 40rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 25.5rem;
+      text-align: left;
     }
   }
 }

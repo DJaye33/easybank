@@ -30,4 +30,12 @@
 .features {
   padding: 6.4rem 2.4rem 3.2rem;
   background-color: var(--color-secondary-bg-light-grayish-blue);
+
+  @media screen and (min-width: 1024px) {
+    padding: 6.9rem 5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 9.4rem 16.5rem;
+  }
 }
