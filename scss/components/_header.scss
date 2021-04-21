@@ -1,57 +1,88 @@
 .header__phone {
-  background-image: url("/images/bg-intro-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 28.77rem;
   position: relative;
-  overflow: hidden;
-  z-index: 2;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 44%;
+  min-height: 28rem;
   margin-bottom: 3.3rem;
 
   @media screen and (min-width: 1024px) {
-    height: 44rem;
-    margin-bottom: 6.6rem;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-size: 90%;
+    background-position: 20% 40%;
+    min-height: 44rem;
   }
 
   @media screen and (min-width: 1440px) {
+    background-size: 145%;
+    background-position: -5% 77%;
     order: 2;
-    background-image: url("/images/bg-intro-desktop.svg");
-    background-size: 158%;
-    background-position: 10% 75%;
-    height: 65.6rem;
-    overflow: initial;
+    min-height: 65.6rem;
+    width: 60%;
     margin-bottom: 0;
   }
 
-  .phones {
-    width: 87%;
+  &::before {
+    content: "";
     position: absolute;
-    top: -11.65rem;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 540px) {
-      top: -18rem;
-    }
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/image-mockups.png");
+    background-size: 91%;
+    background-repeat: no-repeat;
+    background-position: center 88%;
 
     @media screen and (min-width: 768px) {
-      top: -24rem;
+      background-position: center 70%;
     }
 
     @media screen and (min-width: 1024px) {
-      // position: initial;
+      background-size: 70%;
+      background-position: center 50%;
     }
 
     @media screen and (min-width: 1440px) {
-      position: relative;
-      top: -12rem;
-      left: 13rem;
-      width: 100%;
+      height: 120%;
+      background-size: 90%;
+      background-position: 250% 78%;
+    }
+
+    @media screen and (min-width: 1500px) {
+      background-size: 70%;
+      background-position: 90% 90%;
     }
   }
+  // background-image: url("/images/image-mockups.png"),
+  //   url("/images/bg-intro-mobile.svg");
+  // background-repeat: no-repeat, no-repeat;
+  // background-size: 94%, cover;
+  // background-position: 50% 88%, 50% 42%;
+  // height: 28.77rem;
+  // position: relative;
+  // z-index: 2;
+  // margin-bottom: 3.3rem;
+
+  // @media screen and (min-width: 768px) {
+  //   background-position: 50% 35%, 50% 42%;
+  // }
+
+  // @media screen and (min-width: 1024px) {
+  //   height: 44rem;
+  //   margin-bottom: 6.6rem;
+  //   background-position: 50% 75%, 50% 42%;
+  // }
+
+  // @media screen and (min-width: 1440px) {
+  //   order: 2;
+  //   background-image: url("/images/image-mockups.png"),
+  //     url("/images/bg-intro-desktop.svg");
+  //   background-size: 94%, 150%;
+  //   background-position: 360% 42%, -5% 75%;
+  //   height: 65.6rem;
+  //   width: 60%;
+  //   margin-bottom: 0;
+  // }
 }
 
 .header__info {
@@ -76,7 +107,7 @@
     padding: 0;
     padding-left: 16.5rem;
     align-items: flex-start;
-    width: 44.7rem;
+    width: 46.7rem;
   }
 
   .header-heading {

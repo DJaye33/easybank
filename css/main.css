@@ -10,6 +10,7 @@
   --color-primary-dark-blue: #2d314d;
   --color-primary-lime-green: #31d35c;
   --color-primary-bright-cyan: #2bb7da;
+  --color-secondary-bg-light-grayish-blue: #f4f5f7;
   --color-neutral-grayish-blue: #9698a6;
   --color-neutral-light-grayish-blue: #f3f4f6;
   --color-neutral-very-light-gray: #fafafa;
@@ -77,13 +78,15 @@ button:hover {
 
 .header {
   display: flex;
-  flex-direction: column;
-  border: 2px dotted gold; }
+  flex-direction: column; }
   @media screen and (min-width: 1440px) {
     .header {
       flex-direction: row;
-      align-items: center;
-      justify-content: space-between; } }
+      align-items: center; } }
+
+.features {
+  padding: 6.4rem 2.4rem 3.2rem;
+  background-color: var(--color-secondary-bg-light-grayish-blue); }
 
 .toggleMenu {
   cursor: pointer; }
@@ -180,48 +183,52 @@ button:hover {
           margin-bottom: initial; } }
 
 .header__phone {
-  background-image: url("/images/bg-intro-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 28.77rem;
   position: relative;
-  overflow: hidden;
-  z-index: 2;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 44%;
+  min-height: 28rem;
   margin-bottom: 3.3rem; }
   @media screen and (min-width: 1024px) {
     .header__phone {
-      height: 44rem;
-      margin-bottom: 6.6rem; } }
+      background-image: url("/images/bg-intro-desktop.svg");
+      background-size: 90%;
+      background-position: 20% 40%;
+      min-height: 44rem; } }
   @media screen and (min-width: 1440px) {
     .header__phone {
+      background-size: 145%;
+      background-position: -5% 77%;
       order: 2;
-      background-image: url("/images/bg-intro-desktop.svg");
-      background-size: 158%;
-      background-position: 10% 75%;
-      height: 65.6rem;
-      overflow: initial;
+      min-height: 65.6rem;
+      width: 60%;
       margin-bottom: 0; } }
-  .header__phone .phones {
-    width: 87%;
+  .header__phone::before {
+    content: "";
     position: absolute;
-    top: -11.65rem;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto; }
-    @media screen and (min-width: 540px) {
-      .header__phone .phones {
-        top: -18rem; } }
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/image-mockups.png");
+    background-size: 91%;
+    background-repeat: no-repeat;
+    background-position: center 88%; }
     @media screen and (min-width: 768px) {
-      .header__phone .phones {
-        top: -24rem; } }
+      .header__phone::before {
+        background-position: center 70%; } }
+    @media screen and (min-width: 1024px) {
+      .header__phone::before {
+        background-size: 70%;
+        background-position: center 50%; } }
     @media screen and (min-width: 1440px) {
-      .header__phone .phones {
-        position: relative;
-        top: -12rem;
-        left: 13rem;
-        width: 100%; } }
+      .header__phone::before {
+        height: 120%;
+        background-size: 90%;
+        background-position: 250% 78%; } }
+    @media screen and (min-width: 1500px) {
+      .header__phone::before {
+        background-size: 70%;
+        background-position: 90% 90%; } }
 
 .header__info {
   display: flex;
@@ -242,7 +249,7 @@ button:hover {
       padding: 0;
       padding-left: 16.5rem;
       align-items: flex-start;
-      width: 44.7rem; } }
+      width: 46.7rem; } }
   .header__info .header-heading {
     font-weight: 300;
     font-size: 4rem;
@@ -271,5 +278,56 @@ button:hover {
     @media screen and (min-width: 1440px) {
       .header__info .header-paragraph {
         text-align: left; } }
+
+.features__header {
+  margin-bottom: 5.6rem; }
+  .features__header .features-heading {
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: var(--color-primary-dark-blue);
+    margin-bottom: 1.4rem; }
+  .features__header .features-paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .features__header .features-paragraph {
+        margin: 0 auto;
+        width: 40rem; } }
+
+.features__content .features__banking,
+.features__content .features__budgeting,
+.features__content .features__onboarding,
+.features__content .features__api {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 21.5rem;
+  margin-bottom: 3.2rem; }
+.features__content .banking-heading,
+.features__content .budgeting-heading,
+.features__content .onboarding-heading,
+.features__content .api-heading {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: var(--color-primary-dark-blue); }
+.features__content .banking-paragraph,
+.features__content .budgeting-paragraph,
+.features__content .onboarding-paragraph,
+.features__content .api-paragraph {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .features__content .banking-paragraph,
+    .features__content .budgeting-paragraph,
+    .features__content .onboarding-paragraph,
+    .features__content .api-paragraph {
+      width: 40rem; } }
 
 /*# sourceMappingURL=main.css.map */
