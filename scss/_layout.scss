@@ -54,6 +54,16 @@
 }
 
 .footer {
-  padding: 4rem 7.8rem;
+  padding: 4rem 6.5rem;
   background-color: var(--color-primary-dark-blue);
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 4.8rem 16.5rem;
+  }
 }
