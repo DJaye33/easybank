@@ -74,7 +74,7 @@ button:hover {
       padding: 2.4rem 9.5rem; } }
   @media screen and (min-width: 1440px) {
     .navbar {
-      padding: 3.3rem 16.5rem; } }
+      padding: 2.7rem 16.5rem; } }
 
 .header {
   display: flex;
@@ -186,7 +186,15 @@ button:hover {
         margin-bottom: initial;
         font-size: 1.4rem;
         line-height: 1.6rem;
-        position: relative; } }
+        position: relative; }
+        .navbar__navigation .navigation:hover::after {
+          content: "";
+          height: 2px;
+          width: 100%;
+          background-image: linear-gradient(135deg, var(--color-primary-lime-green) 0%, var(--color-primary-bright-cyan) 99.58%);
+          position: absolute;
+          top: 4rem;
+          left: 0; } }
     .navbar__navigation .navigation:first-child {
       margin-top: 3.2rem; }
       @media screen and (min-width: 1024px) {
